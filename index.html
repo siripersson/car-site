@@ -10,7 +10,7 @@
   </head>
 
 <body>
-  <h1>Welcome to this awesome car site</h1>
+  <h1>Welcome to this awesome car site!</h1>
   <p>Press one of the buttons below the car to create sounds!</p>
   <!--Car image -->
   <img src="images/car1.png" class="car" alt="car">
@@ -19,11 +19,13 @@
   <!--Buttons-->
   <a href="javascript:startCar();"><img src="images/key.png" alt="key"></a>
   <a href="javascript:honkHorn();"><img src="images/steering-wheel.png" alt="steering wheel"></a>
+  <a id='traffic_light' href="javascript:stopAtLight();"><img src="images/traffic_light.png" alt="traffic lightl"></a>
 
   
   <!--Audio Files-->
   <audio id="startCar" src="sounds/car_start.wav" preload="auto"></audio>
   <audio id="honkHorn" src="sounds/car_horn.wav" preload="auto"></audio>
+  <audio id="stopAtLight" src="sounds/stopAtLight.wav" preload="auto"></audio>
 
 
   <!--Javascript-->
@@ -33,6 +35,9 @@
     }
     function honkHorn() {
       document.getElementById('honkHorn').play();
+    }
+    function stopAtLight() {
+      document.getElementById('stopAtLight').play();
     }
   </script>  
 </body>
