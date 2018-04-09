@@ -1,0 +1,42 @@
+/* Background Color */
+html {
+	background:white;
+}
+
+
+/* Body */
+body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+/* Images */
+img {
+  width: 100%;
+  display: center;
+}
+
+.car { 
+  display:block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Links */
+a {
+  background: transparent;
+  border: 10px;
+  display: block;
+  float: left;
+  margin: auto;
+  outline: 0;
+  padding: 0;
+  position: center;
+  width: 20%;
+}
+
+h1{
+    color: darkblue;
+}
+

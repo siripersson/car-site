@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <title>Car Sounds</title>
+
+    <!--Style Sheet link-->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+  <h1>Welcome to this awesome car site</h1>
+  <p>Press one of the buttons below the car to create sounds!</p>
+  <!--Car image -->
+  <img src="images/car1.png" class="car" alt="car">
+
+
+  <!--Buttons-->
+  <a href="javascript:startCar();"><img src="images/key.png" alt="key"></a>
+  <a href="javascript:honkHorn();"><img src="images/steering-wheel.png" alt="steering wheel"></a>
+
+  
+  <!--Audio Files-->
+  <audio id="startCar" src="sounds/car_start.wav" preload="auto"></audio>
+  <audio id="honkHorn" src="sounds/car_horn.wav" preload="auto"></audio>
+
+
+  <!--Javascript-->
+  <script type="text/javascript">
+    function startCar() {
+      document.getElementById('startCar').play();
+    }
+    function honkHorn() {
+      document.getElementById('honkHorn').play();
+    }
+  </script>  
+</body>
+</html> 
